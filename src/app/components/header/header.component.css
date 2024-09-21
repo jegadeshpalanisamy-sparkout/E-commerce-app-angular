@@ -1,0 +1,14 @@
+ /* Add hover effect for navbar links */
+ .navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffcc00 !important; /* Changes text color to a gold-like color on hover */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  }
+
+  /* Optional: Add hover effect for the search button */
+  .btn-outline-light:hover {
+    background-color: #ffcc00; /* Changes background color to gold */
+    color: #000 !important; /* Changes text color to black */
+    border-color: #ffcc00; /* Adjusts the button border to match */
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }

@@ -1,0 +1,22 @@
+{
+  "seller": [
+    {
+      "id": "176c",
+      "name": "jega",
+      "email": "jega@yopmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": "90df",
+      "name": "jack",
+      "email": "jpro@yopmail.com",
+      "password": "1111111"
+    },
+    {
+      "id": "fb19",
+      "name": "jpro",
+      "email": "jpro@yopmail.com",
+      "password": "Secure!123"
+    }
+  ]
+}
