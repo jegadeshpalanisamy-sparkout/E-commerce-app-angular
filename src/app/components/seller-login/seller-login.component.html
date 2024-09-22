@@ -1,24 +1,18 @@
-<body>
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="card shadow-lg">
                     <div class="card-header text-center">
-                        <h4>Sign Up</h4>
-                    </div>
+                        <h4>Login</h4>
+                        <div class="alert alert-danger d-flex align-items-center m-1" role="alert" *ngIf="loginErrorMessage != ''">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill me-2" viewBox="0 0 16 16">
+                              <path d="M8 1.288a1.13 1.13 0 0 1 1.027.596l6.857 11.93c.18.31.222.66.117.986a1.13 1.13 0 0 1-1.028.736H1.027a1.13 1.13 0 0 1-1.028-.736 1.078 1.078 0 0 1 .117-.986L6.973 1.884A1.13 1.13 0 0 1 8 1.288zM8 5c-.535 0-.954.462-.9.995l.35 3.507a.552.552 0 0 0 1.1 0L8.9 5.995c.054-.533-.365-.995-.9-.995zm.002 6a.905.905 0 1 0 0 1.81.905.905 0 0 0 0-1.81z"/>
+                            </svg>
+                            <span>{{loginErrorMessage}}</span>
+                          </div>
+                      </div>
                     <div class="card-body">
-                        <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
-                            <!-- Name Input -->
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="name" placeholder="Enter your name" formControlName="name">
-                                 <!-- Name validation errors -->
-                                <div *ngIf="f['name'].touched && f['name'].invalid" class="text-danger">
-                                    <small *ngIf="f['name'].errors?.['required']">Name is required.</small>
-                                    <small *ngIf="f['name'].errors?.['minlength']">Name must be at least 3 characters.</small>
-                                </div>
-                            </div>
-
+                        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">                           
                             <!-- Email Input -->
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email address</label>
@@ -43,17 +37,15 @@
 
                             <!-- Sign Up Button -->
                             <div class="d-grid gap-2">
-                                <button type="submit" class="btn btn-primary" [disabled]="signUpForm.invalid">Sign Up</button>
+                                <button type="submit" class="btn btn-primary" [disabled]="loginForm.invalid">Login</button>
                               </div>
                         </form>
                     </div>
 
                     <div class="card-footer text-center">
-                        <small>Already have an account? <a routerLink="seller-login">Login here</a></small>
+                        <small>You Don't have an account? <a routerLink="" (click)="goToSignup()">Signup here</a></small>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <router-outlet></router-outlet>
-</body>

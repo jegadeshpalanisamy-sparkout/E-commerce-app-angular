@@ -11,3 +11,12 @@ export const sellerGuardGuard: CanActivateFn = (route, state) => {
   } 
   return sellerService.isSellerLoggedIn;
 };
+
+export const Guard: CanActivateFn = (route, state) => {
+
+  const sellerService = inject(SellerService);
+  if(!localStorage.getItem('seller')) {
+   return true;
+  } 
+  return sellerService.isSellerLoggedIn;
+};

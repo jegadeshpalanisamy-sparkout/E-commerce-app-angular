@@ -1,0 +1,86 @@
+body {
+    background-color: #f3f4f6;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    background-color: #6a0dad;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 20px;
+}
+
+.card-header h4 {
+    margin: 0;
+    color: #fff;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.form-label {
+    color: #6a0dad;
+    font-weight: bold;
+}
+
+.form-control {
+    border: 2px solid #e2e2e2;
+    border-radius: 5px;
+    padding: 10px;
+    transition: border-color 0.3s;
+}
+
+.form-control:focus {
+    border-color: #6a0dad;
+    box-shadow: none;
+}
+
+.btn-primary {
+    background-color: #6a0dad;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #5c0bb7;
+    box-shadow: 0 4px 10px rgba(106, 13, 173, 0.5);
+}
+
+.card-footer {
+    background-color: #f9f9f9;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 15px;
+}
+
+.card-footer a {
+    color: #6a0dad;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card-footer a:hover {
+    text-decoration: underline;
+}
