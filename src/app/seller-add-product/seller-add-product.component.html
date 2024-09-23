@@ -7,6 +7,8 @@
           </div>
           <div class="card-body">
             <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+              <app-success-alert [message]="addProductSuccessMsg" [type]="'success'" [showAlert]="productAdded"></app-success-alert>
+
               <!-- Product Name -->
               <div class="form-group">
                 <label for="productName">Product Name</label>

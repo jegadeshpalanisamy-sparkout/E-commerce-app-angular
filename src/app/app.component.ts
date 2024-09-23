@@ -10,7 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     RouterOutlet,
     HeaderComponent,
-    HttpClientModule
+    HttpClientModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
