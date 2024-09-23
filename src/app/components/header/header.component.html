@@ -24,9 +24,9 @@
     </div>
 
     <div class="navbar-nav" *ngSwitchCase="'seller'">
-      <a class="nav-item nav-link text-white" href="#">Add Product</a>
-      <a class="nav-item nav-link text-white" href="#">Logout</a>
-      <a class="nav-item nav-link text-white" href="#">Seller name</a>      
+      <a class="nav-item nav-link text-white" routerLink="seller-add-product">Add Product</a>
+      <a class="nav-item nav-link text-white" routerLink="" (click)="logout()">Logout</a>
+      <a class="nav-item nav-link text-white">{{sellerName | titlecase}}</a>      
     </div>
   </div>
 

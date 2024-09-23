@@ -12,19 +12,30 @@ import { Router, RouterModule } from '@angular/router';
 export class HeaderComponent implements OnInit{
 
   menuType:string = 'default';
+  sellerName:string = '';
   constructor(private router:Router){}
 
   ngOnInit(): void {
     this.router.events.subscribe((val:any)=>{
       if(val.url) {
-        console.warn("route change",val.url)
-        if(localStorage.getItem('seller') && val.url.includes('seller')) {
-          this.menuType = 'seller';
+        const sellerStore = localStorage.getItem('seller');
+        if(sellerStore && val.url.includes('seller')) {
+          // console.log('seller-store',sellerStore);
+          this.menuType = 'seller';        
+          const sellerData = JSON.parse(sellerStore)[0];
+          console.log('seller-data',sellerData);
+          this.sellerName = sellerData.name;
+          console.log(this.sellerName)
         } else {
           this.menuType = 'default';
          }
       }
     })
+  }
+
+  logout(){
+    localStorage.removeItem('seller')
+    this.router.navigate(['']);
   }
 
 }

@@ -1,0 +1,32 @@
+ /* Custom Colors */
+ .custom-card {
+    background-color: #e0e9e5; /* Light green */
+    border: 2px solid #6a1b9a; /* Purple border */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  }
+
+  .custom-header {
+    background-color: #6a1b9a; /* Purple */
+    color: white;
+  }
+
+  .btn-custom {
+    background-color:green;
+    border: none;
+    color:white; /* Purple */
+    margin-top: 10px;
+  }
+
+  .btn-custom:hover {
+    background-color:#3c9d21; /* Lighter gold on hover */
+  }
+
+  .form-control:focus {
+    border-color: #6a1b9a; /* Purple focus */
+    box-shadow: none;
+  }
+
+  label {
+    color: #6a1b9a; /* Purple text for labels */
+    margin: 5px;
+  }
