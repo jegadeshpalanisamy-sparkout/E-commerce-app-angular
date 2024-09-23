@@ -93,22 +93,13 @@
   ],
   "add-products": [
     {
-      "id": "2056",
-      "name": "vivo",
-      "price": "12000",
-      "color": "black",
+      "productName": "Vivo",
+      "price": 130000,
       "category": "mobile",
-      "description": "hii this is vivo mobile phone",
-      "image": "https://www.google.com/imgres?q=viivo%20image&imgurl=https%3A%2F%2Fasia-exstatic-vivofs.vivo.com%2FPSee2l50xoirPK7y%2F1724299315474%2Fb1d32d371a93fcc3daff1949780b2f40.png&imgrefurl=https%3A%2F%2Fwww.vivo.com%2Fen%2Fproducts&docid=GcZcCCcVqUrKkM&tbnid=x9ZcOtnGfOs_wM&vet=12ahUKEwi25t_Vo9iIAxVoe2wGHQoVLngQM3oECGwQAA..i&w=640&h=640&hcb=2&ved=2ahUKEwi25t_Vo9iIAxVoe2wGHQoVLngQM3oECGwQAA"
-    },
-    {
-      "id": "6f8a",
-      "productName": "apple",
-      "price": 100000,
-      "category": "mobile",
-      "productColor": "white",
-      "productDescription": "apple i phone newly lunched ",
-      "productImageUrl": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-pro-finish-select-202409-6-9inch-deserttitanium?wid=5120&hei=2880&fmt=webp&qlt=70&.v=eUdsd0dIb3VUOXdtWkY0VFUwVE8vbEdkZHNlSjBQRklnaFB2d3I5MW94NW9lRVVkRmJ5ZE03VysydEdnMXpSNEY3eHJKR1hDaEJCS2hmc2czazlldHlSTUMybCtXNXZpclhWeFpYZUcvRk80dEcwRGlZdHZNUlUyQVJ1QXFtSFFUeEZnNlNyc3llcmZiYmQ5TGppeHJ3PT0=&traceId=1"
+      "productColor": "black",
+      "productDescription": "vivo newly lunched mobile",
+      "productImageUrl": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1722953526/Croma%20Assets/Communication/Mobiles/Images/308790_0_mb36fv.png?tr=w-360",
+      "id": "5050"
     }
   ]
 }

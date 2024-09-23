@@ -37,6 +37,10 @@ export class SellerAddProductComponent {
       if(data) {
         this.addProductSuccessMsg = 'Product added successfully';
         this.productAdded = true;
+        setTimeout(() => {
+          this.productAdded = false;
+          this.addProductSuccessMsg = '';
+        },2000)
       }
     });
 

@@ -10,8 +10,17 @@ export interface login{
 }
 
 export interface product{
-    name: string;
+    id: string;
+    productName: string;
     price: number;
     category: string;
-    imageUrl: string;
+    productImageUrl: string;
+    productDescription: string;
+    productColor: string;
 }
+// productName: ['', [Validators.required, Validators.minLength(3)]],
+// price: ['', [Validators.required, Validators.pattern(/^[0-9]*$/)]],
+// category: ['', Validators.required],
+// productColor: ['', Validators.required],
+// productDescription: ['', [Validators.required, Validators.minLength(10)]],
+// productImageUrl
