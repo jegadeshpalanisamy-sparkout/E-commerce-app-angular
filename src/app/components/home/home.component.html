@@ -1,1 +1,13 @@
-<p>home works!</p>
+@if (images) {
+	<ngb-carousel>
+		<ng-template ngbSlide *ngFor="let product of papularProducts">            
+			<div class="picsum-img-wrapper">
+				<img [src]="product.productImageUrl" alt="Random first slide" />
+			</div>
+			<div class="carousel-caption ">
+				<h3>{{ product.productName }}</h3>
+				<p>{{ product.productDescription }}.</p>
+			</div>
+		</ng-template>	
+	</ngb-carousel>
+}

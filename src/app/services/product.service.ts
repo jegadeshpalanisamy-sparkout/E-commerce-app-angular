@@ -29,4 +29,10 @@ export class ProductService {
   updateProduct(id:any,data:product) {
     return this.http.put(`http://localhost:3000/add-products/${id}`,data);
   }
+
+
+  getPapularProducts() {
+    return this.http.get<product[]>('http://localhost:3000/add-products?_limit=3');
+  } 
+
 }
