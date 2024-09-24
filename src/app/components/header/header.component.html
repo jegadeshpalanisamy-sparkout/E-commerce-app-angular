@@ -12,8 +12,8 @@
   
   <div class="w-50" *ngIf="menuType === 'default' ">
       <form class="form-inline d-flex gap-1 me-5 w-100">
-          <input class="form-control mr-sm-2 shadow-sm" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-light my-2 my-sm-0 shadow-sm" type="submit">Search</button>
+          <input class="form-control mr-sm-2 shadow-sm" type="search" placeholder="Search" aria-label="Search" (keyup)="searchProducts($event)" #search>
+          <button class="btn btn-outline-light my-2 my-sm-0 shadow-sm" type="submit" (click)="submitSearch(search.value)">Search</button>
       </form>
   </div>
   <div [ngSwitch]="menuType">

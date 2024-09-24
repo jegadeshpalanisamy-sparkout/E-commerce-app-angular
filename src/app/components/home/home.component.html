@@ -1,8 +1,8 @@
-@if (images) {
+
 	<ngb-carousel>
 		<ng-template ngbSlide *ngFor="let product of papularProducts">            
 			<div class="picsum-img-wrapper">
-				<img [src]="product.productImageUrl" alt="Random first slide" />
+				<img [src]="product.productImageUrl" alt="Random first slide" class="img-papular" />
 			</div>
 			<div class="carousel-caption ">
 				<h3>{{ product.productName }}</h3>
@@ -10,4 +10,8 @@
 			</div>
 		</ng-template>	
 	</ngb-carousel>
-}
+  
+  <app-trending-products></app-trending-products>
+  
+  
+  

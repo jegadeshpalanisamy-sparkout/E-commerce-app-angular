@@ -1,0 +1,81 @@
+/* trending product styles */
+/* Trending Products Heading */
+.trending-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #343a40; /* Dark gray for elegant look */
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Stylish underline below heading */
+  .trending-heading::after {
+    content: '';
+    width: 100px;
+    height: 5px;
+    background-color: #007bff; /* Blue underline */
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Card styling */
+  .product-card {
+    border: none; /* Remove card border */
+    border-radius: 15px; /* Add rounded corners */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height:550px;
+  }
+  
+  .product-card img {
+    border-radius: 15px 15px 0 0; /* Round top corners of image */
+     object-fit: cover; /*Maintain aspect ratio and cover the area */
+     height: 320px;
+  }
+  
+  /* Add shadow and hover effect */
+  .product-card:hover {
+    transform: translateY(-10px); /* Slight hover lift effect */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15); /* Increase shadow on hover */
+  }
+  
+  .product-card .card-body {
+    background-color: #cdcece; /* Light background for card body */
+    text-align: center; /* Center text for a clean look */
+  }
+  
+  .product-card h5 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .product-card p {
+    color: #6c757d; /* Muted text color for description */
+    margin-bottom: 5px;
+  }
+  
+  /* Custom text-muted for smaller text */
+  .product-card small.text-muted {
+    color: #adb5bd; /* Slightly lighter muted text */
+  }
+  
+  .btn-purple{
+      background-color: rgb(232, 8, 232);
+      color: white;
+  
+  }
+  
+  .btn-purple:hover{
+      background-color: rgb(182, 16, 182);
+      
+  
+  }
+  

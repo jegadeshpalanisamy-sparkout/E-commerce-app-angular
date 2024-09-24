@@ -1,0 +1,23 @@
+<div class="container mt-5">
+    <h1 class="text-center mb-4 trending-heading">Trending Products</h1>
+    <div class="row">
+      <div class="col col-md-3 mb-4" *ngFor="let product of trendingProducts">
+        <div class="card product-card shadow-lg">
+          <img [src]="product.productImageUrl" class="card-img-top" alt="{{ product.productName }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ product.productName }}</h5>
+            <p class="card-text"><strong>Price:</strong> ${{ product.price }}</p>
+            <p class="card-text"><strong>Color:</strong> {{ product.productColor }}</p>
+            <p class="card-text">{{ product.productDescription }}</p>
+            <p class="card-text"><small class="text-muted">Last updated a moment ago</small></p>
+  
+            <!-- Action buttons -->
+            <div class="d-flex justify-content-between mt-3">
+              <button class="btn btn-purple" >View Details</button>
+              <button class="btn btn-warning">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

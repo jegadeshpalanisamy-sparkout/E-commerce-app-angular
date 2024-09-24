@@ -6,6 +6,7 @@ import { Guard, sellerGuardGuard } from '../app/seller-guard.guard';
 import { SellerLoginComponent } from './components/seller-login/seller-login.component';
 import { SellerAddProductComponent } from './seller-add-product/seller-add-product.component';
 import { SellerUpdateComponent } from './seller-update/seller-update.component';
+import { SearchComponent } from './search/search.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -14,5 +15,6 @@ export const routes: Routes = [
     { path: 'seller/seller-login', component: SellerLoginComponent},
     { path: 'seller-add-product', component: SellerAddProductComponent,canActivate:[sellerGuardGuard]},
     { path: 'seller-home/seller-update-product/:id', component: SellerUpdateComponent,canActivate:[sellerGuardGuard]},
+    { path: 'search/:query', component: SearchComponent}
 
 ];

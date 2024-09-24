@@ -1,0 +1,28 @@
+<div class="container mt-4 ">
+    <div *ngIf="searchProduct.length > 0; else noResults">
+      <!-- Loop through products and display each product in a card -->
+      <div *ngFor="let product of searchProduct" class="card mb-3 shadow-lg">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img [src]="product.productImageUrl" class="img-fluid rounded-start" alt="{{product.productName}}">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Name of Product: {{product.productName | uppercase}}</h5>
+              <p class="card-text">Category: {{product.category | uppercase}}</p>
+              <p class="card-text"><small class="text-muted">Price: {{product.price | currency}}</small></p>
+              <p class="card-text"><small class="text-muted">Describtion {{product.productDescription}}</small></p>
+            </div>
+          </div>
+        </div>
+        <hr>
+        
+      </div>
+    </div>
+  
+    <!-- Display a message if no products are found -->
+    <ng-template #noResults>
+      <p class="text-center text-muted">No products found. Try searching again.</p>
+    </ng-template>
+  </div>
+  
