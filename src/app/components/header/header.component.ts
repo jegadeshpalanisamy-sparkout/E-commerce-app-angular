@@ -2,11 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
 import { ProductService } from '../../services/product.service';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterModule,CommonModule],
+  imports: [RouterModule,CommonModule,FormsModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
@@ -14,6 +15,7 @@ export class HeaderComponent implements OnInit{
 
   menuType:string = 'default';
   sellerName:string = '';
+  
   constructor(private router:Router,private productService: ProductService){}
 
   ngOnInit(): void {
