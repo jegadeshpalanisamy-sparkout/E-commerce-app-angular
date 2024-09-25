@@ -4,9 +4,9 @@ import { product } from '../../interfaces/data-type';
 import { CommonModule } from '@angular/common';
 import { Modal } from 'bootstrap'; // Import Bootstrap Modal
 import { isPlatformBrowser } from '@angular/common';
-import { SuccessAlertComponent } from '../../success-alert/success-alert.component';
+import { SuccessAlertComponent } from '../success-alert/success-alert.component';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
-import { SellerUpdateComponent } from '../../seller-update/seller-update.component';
+import { SellerUpdateComponent } from '../seller-update/seller-update.component';
 
 
 @Component({

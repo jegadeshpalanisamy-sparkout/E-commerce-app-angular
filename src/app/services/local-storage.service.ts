@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { signUp } from '../interfaces/data-type';
 
 @Injectable({
   providedIn: 'root'
@@ -10,5 +9,9 @@ export class LocalStorageService {
 
   signUp(data: any) {
     localStorage.setItem('seller',JSON.stringify(data));
+  }
+
+  userSignUp(data: any) {
+    localStorage.setItem('user',JSON.stringify(data));
   }
 }

@@ -15,6 +15,7 @@ export class HeaderComponent implements OnInit{
 
   menuType:string = 'default';
   sellerName:string = '';
+  userName:string = '';
   
   constructor(private router:Router,private productService: ProductService){}
 
@@ -22,13 +23,17 @@ export class HeaderComponent implements OnInit{
     this.router.events.subscribe((val:any)=>{
       if(val.url) {
         const sellerStore = localStorage.getItem('seller');
+        const userStore = localStorage.getItem('user');
         if(sellerStore && val.url.includes('seller')) {
           // console.log('seller-store',sellerStore);
           this.menuType = 'seller';        
           const sellerData = JSON.parse(sellerStore)[0];
           console.log('seller-data',sellerData);
           this.sellerName = sellerData.name;
-          console.log(this.sellerName)
+        } else if(userStore && val.url.includes('user')) {
+          this.menuType = 'seller';
+          const userData = JSON.parse(userStore)[0];
+          this.userName = userData.name;        
         } else {
           this.menuType = 'default';
          }

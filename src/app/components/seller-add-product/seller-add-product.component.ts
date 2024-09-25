@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { ProductService } from '../services/product.service';
+import { ProductService } from '../../services/product.service';
 import { SuccessAlertComponent } from '../success-alert/success-alert.component';
 
 @Component({

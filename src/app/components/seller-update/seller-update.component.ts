@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { ProductService } from '../services/product.service';
+import { ProductService } from '../../services/product.service';
 import { CommonModule } from '@angular/common';
 import { SuccessAlertComponent } from '../success-alert/success-alert.component';
 import { ActivatedRoute, Router } from '@angular/router';
-import { product } from '../interfaces/data-type';
+import { product } from '../../interfaces/data-type';
 
 @Component({
   selector: 'app-seller-update',

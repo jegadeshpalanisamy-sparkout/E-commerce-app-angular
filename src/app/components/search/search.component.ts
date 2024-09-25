@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { ProductService } from '../services/product.service';
+import { ProductService } from '../../services/product.service';
 import { ActivatedRoute, RouterModule } from '@angular/router';
-import { product } from '../interfaces/data-type';
+import { product } from '../../interfaces/data-type';
 
 @Component({
   selector: 'app-search',

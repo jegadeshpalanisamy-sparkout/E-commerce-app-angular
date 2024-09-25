@@ -18,10 +18,15 @@
   </div>
   <div [ngSwitch]="menuType" class="ms-1">
       <div class="navbar-nav" *ngSwitchCase="'default'">
-        <a class="nav-item nav-link text-dark" href="#">Register</a>
-        <a class="nav-item nav-link text-dark" href="#">Login</a>
-        <a class="nav-item nav-link text-dark" href="#">Card</a>      
+        <a class="nav-item nav-link text-dark" routerLink="/user-register">Register</a>
+        <a class="nav-item nav-link text-dark">Login</a>
+        <a class="nav-item nav-link text-dark">Card</a>      
     </div>
+    <div class="navbar-nav" *ngSwitchCase="'user'">
+      <a class="nav-item nav-link text-dark"  routerLink="/user-register"></a>
+      <a class="nav-item nav-link text-dark" >Logout</a>
+      <a class="nav-item nav-link text-dark">{{userName | titlecase}}</a>      
+  </div>
 
     <div class="navbar-nav" *ngSwitchCase="'seller'">
       <a class="nav-item nav-link text-dark" routerLink="seller-add-product">Add Product</a>
