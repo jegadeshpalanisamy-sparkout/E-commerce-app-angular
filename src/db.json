@@ -92,15 +92,7 @@
     }
   ],
   "add-products": [
-    {
-      "productName": "iphone",
-      "price": 1400000,
-      "category": "mobile",
-      "productColor": "blue",
-      "productDescription": "Apple newly lunched mobile",
-      "productImageUrl": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-finish-select-202409-6-1inch-ultramarine?wid=5120&hei=2880&fmt=webp&qlt=70&.v=UXp1U3VDY3IyR1hNdHZwdFdOLzg1V0tFK1lhSCtYSGRqMUdhR284NTN4L28rSU1jVGx4VGxCNEFSdVNXdG1RdzJrQmVLSXFrTCsvY1VvVmRlZkVnMzJKTG1lVWJJT2RXQWE0Mm9rU1V0V0E5L1ZBdzY3RU1aTVdUR3lMZHFNVzE0RzhwM3RLeUk1S0YzTkJVVmF2Ly9RPT0=&traceId=1",
-      "id": "50a0"
-    },
+   
     {
       "productName": "vivo",
       "price": 130000,
@@ -123,10 +115,29 @@
       "productName": "oppo",
       "price": 220000,
       "category": "mobile",
-      "productColor": "dark-green",
+      "productColor": "green",
       "productDescription": "Oppo newly lunched mobile",
       "productImageUrl": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ0t85NqAvkOwytjbXP54RkLginNCKQX2TZ4ZLfKFK5lCnj9VMvYC6Vv-zYcu-wVNBnVlcRzMNaN7lMccag9JlfhxYEra7HnP-hkkOl9yfw03T9Pv9d8El-",
       "id": "5058"
+    },
+   
+    {
+      "productName": "realme",
+      "price": 13000,
+      "category": "Mobile",
+      "productColor": "white",
+      "productDescription": " Realme newly lunched mobile",
+      "productImageUrl": "https://img-prd-pim.poorvika.com/cdn-cgi/image/width=1600,height=1600,quality=75/product/Realme-12x-5g-twilight-purple-128gb-6gb-ram-Front-Back-View.png",
+      "id": "24e9"
+    },
+    {
+      "productName": "iphone",
+      "price": 1400000,
+      "category": "mobile",
+      "productColor": "blue",
+      "productDescription": "Apple newly lunched mobile",
+      "productImageUrl": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-finish-select-202409-6-1inch-ultramarine?wid=5120&hei=2880&fmt=webp&qlt=70&.v=UXp1U3VDY3IyR1hNdHZwdFdOLzg1V0tFK1lhSCtYSGRqMUdhR284NTN4L28rSU1jVGx4VGxCNEFSdVNXdG1RdzJrQmVLSXFrTCsvY1VvVmRlZkVnMzJKTG1lVWJJT2RXQWE0Mm9rU1V0V0E5L1ZBdzY3RU1aTVdUR3lMZHFNVzE0RzhwM3RLeUk1S0YzTkJVVmF2Ly9RPT0=&traceId=1",
+      "id": "50a0"
     },
     {
       "productName": "vivo",
@@ -136,15 +147,6 @@
       "productDescription": "vivo newly lunched mobile",
       "productImageUrl": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1722953526/Croma%20Assets/Communication/Mobiles/Images/308790_0_mb36fv.png?tr=w-360",
       "id": "5052"
-    },
-    {
-      "productName": "realme",
-      "price": 13000,
-      "category": "Mobile",
-      "productColor": "white",
-      "productDescription": " Realme newly lunched mobile",
-      "productImageUrl": "https://img-prd-pim.poorvika.com/cdn-cgi/image/width=1600,height=1600,quality=75/product/Realme-12x-5g-twilight-purple-128gb-6gb-ram-Front-Back-View.png",
-      "id": "24e9"
     }
   ]
 }

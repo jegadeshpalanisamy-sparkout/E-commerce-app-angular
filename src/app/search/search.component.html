@@ -4,11 +4,11 @@
       <div *ngFor="let product of searchProduct" class="card mb-3 shadow-lg">
         <div class="row g-0">
           <div class="col-md-4">
-            <img [src]="product.productImageUrl" class="img-fluid rounded-start" alt="{{product.productName}}">
+            <a href="" [routerLink]="['/product-detail',product.id]"> <img [src]="product.productImageUrl" class="img-fluid rounded-start" alt="{{product.productName}}"></a>
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title">Name of Product: {{product.productName | uppercase}}</h5>
+              <h5 class="card-title"><a href="" [routerLink]="['/product-detail',product.id]">Name of Product: {{product.productName | uppercase}}</a></h5>
               <p class="card-text">Category: {{product.category | uppercase}}</p>
               <p class="card-text"><small class="text-muted">Price: {{product.price | currency}}</small></p>
               <p class="card-text"><small class="text-muted">Describtion {{product.productDescription}}</small></p>
